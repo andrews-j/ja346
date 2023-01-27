@@ -1,28 +1,3 @@
----
-title: "my_first_vignette"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{my_first_vignette}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
-```{r}
-library(ja346)
-my_number_checker(1)
-my_number_checker(7)
-my_number_checker(20)
-```
-```
-is this a chunk?
-```{r}
 #' A Squirrel Function
 #' @description This function allows you to express your love of cats.
 #' @param admire Do you love cats? Defaults to TRUE.
@@ -37,5 +12,3 @@ squirrel_function <- function(love = TRUE) {
   }
 }
 squirrel_function(love = TRUE)
-
-```

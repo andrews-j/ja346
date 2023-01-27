@@ -9,10 +9,9 @@
 #' my_number_checker(7)
 #' my_number_checker(11)
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 5c0e9ee70614761657ee8ba95eddfde10e6d0559
+
+
 my_number_checker <- function(x) {
   if(x < 5) {
     print("Too low!")
@@ -22,12 +21,11 @@ my_number_checker <- function(x) {
     print("Too high!")
   }
 }
-<<<<<<< HEAD
+
 
 my_number_checker(4)
 
-#check check
+#check check check
 
 browseVignettes("roxygen2")
-=======
->>>>>>> 5c0e9ee70614761657ee8ba95eddfde10e6d0559
+

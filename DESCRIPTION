@@ -8,4 +8,9 @@ License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
+<<<<<<< HEAD
 RoxygenNote: 7.2.3.9000
+=======
+RoxygenNote: 7.2.3
+
+>>>>>>> 5c0e9ee70614761657ee8ba95eddfde10e6d0559

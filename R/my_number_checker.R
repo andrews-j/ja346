@@ -10,12 +10,18 @@
 #' my_number_checker(11)
 
 
+
+install.packages("devtools")
+library("devtools")
+devtools::install_github("klutometis/roxygen")
+library(roxygen2)
+
 my_number_checker <- function(x) {
   if(x < 5) {
     print("Too low!")
   } else if(x >= 5 & x < 10) {
     print("Just right!!! :)")
   } else {
-    print("Too high!")ss
+    print("Too high!")
   }
 }

@@ -1,12 +1,7 @@
 Package: ja346
 Title: Package for GEOG 346 Coursework
-<<<<<<< HEAD
 Version: 0.0.0.1
 Author: Jason Andrews, Homer Simpson
-=======
-Version: 0.0.2
-Author: Jason Andrews
->>>>>>> test_merge
 Maintainer: Jason Andrews <jasonporterandrews@gmail.com>
 Description: Classwork for GEOG 346, Spring 2023
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a

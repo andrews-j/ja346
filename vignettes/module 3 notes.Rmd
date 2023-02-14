@@ -1,0 +1,54 @@
+---
+title: "Module 3 Notes"
+output: html_document
+date: "2023-02-06"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+library(tibble)
+library(data.table)
+# a data.frame with 1000 rows and randomly assigned groups and values...
+set.seed(1)
+d <- data.frame(a = sample(letters[1:7], size = 1000, replace = TRUE), 
+                b = runif(n = 1000, min = 0, max = 20))
+head(d)
+aggregate(d$b, list(d$a), mean)
+```
+
+```{r}
+d_tb <- as_tibble(d)
+d_tb
+library(dplyr)
+d_tb %>% group_by(a) %>% summarize(mean(b))
+```
+
+```{r}
+d_dt <- data.table(d)
+d_dt
+d_dt[, mean(b), by = a][order(a)]
+```
+

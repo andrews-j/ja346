@@ -23,5 +23,3 @@ my_number_checker <- function(x) {
 }
 
 
-browseVignettes("roxygen2")
-

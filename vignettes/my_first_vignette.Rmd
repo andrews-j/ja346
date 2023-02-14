@@ -21,7 +21,6 @@ my_number_checker(7)
 my_number_checker(20)
 ```
 ```
-is this a chunk?
 ```{r}
 #' A Squirrel Function
 #' @description This function allows you to express your love of cats.
